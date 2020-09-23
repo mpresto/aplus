@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>A+ Glass & Maintenance</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light navbar-dark fixed-top" style="background-color: transparent; transition: 0.5s ease-in-out;" id='navbar'>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{{url_for ('static', filename='img/logo.jfif')}}" alt="" style='height:50px'></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCategories" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarCategories">
+            <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropDown" data-toggle="dropdown" aria-expanded="false">Services</a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropDown">
+                  <li><a class="dropdown-item" href="#">Showers</a></li>
+                  <li><a class="dropdown-item" href="#">Mirrors</a></li>
+                  <li><a class="dropdown-item" href="#">Art Glass</a></li>
+                  <li><a class="dropdown-item" href="#">Glass Railing</a></li>
+                  <li><a class="dropdown-item" href="#">Tile</a></li>
+                  <li><a class="dropdown-item" href="#">Rejuvenation</a></li>
+                </ul>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Past Projects</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" style="max-height:600px"> 
+            <div class="carousel-item active">
+                <img src="{{ url_for ('static', filename='img/stain-glass-1.jpg') }}" class="d-block w-100">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="content">
+        <br><br>
+        <div class="container row align-center border-bottom">
+            <div class="col-2"></div>
+            <div class="col-6">
+                <h3>Cost of Renovation</h3>
+                <p>Use our form to estimate the initial cost of renovation or installation</p>
+            </div>
+            <div class="col-2">
+                <button type="button" class="btn btn-primary justify-right">Request A Quote</button>
+            </div>
+        </div>
+
+        <div class="container text-center" id="services">
+            <br><br><br>
+            <h2>Our Services</h2>
+            <br>
+            <div class="row">
+                <div class="col-2"></div>
+                <p class="col-8">With over 15 years experience and real focus on customer satisfaction, you can rely on
+                    us for your next renovation,
+                    driveway sett or home repair. We provide a professional service for private and commercial
+                    customers. </p>
+                <div class="col-2"></div>
+            </div>
+            <br>
+            <div class="row gx-0">
+                <div class="col">
+                    <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="img-fluid">
+                    <h5>Shower Installation</h5>
+                    <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
+                </div>
+                <div class="col">
+                    <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="img-fluid">
+                    <h5>Shower Installation</h5>
+                    <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
+                </div>
+                <div class="col">
+                    <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="img-fluid">
+                    <h5>Shower Installation</h5>
+                    <p>We can help you bring new life to existing rooms and develop unused spaces.</p>
+                    <br>
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary justify-right">View All Services</button>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div id="projects" class="bg-light">
+        <br><br>
+        <div class="container-fluid">
+            <div class="text-center">
+                <h2>Our Projects</h2>
+                <br>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <p class="col-8">With over 15 years experience and real focus on customer satisfaction, you can rely
+                        on us for your next renovation,
+                        driveway sett or home repair. We provide a professional service for private and commercial
+                        customers. </p>
+                    <div class="col-2"></div>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="row g3">
+            <div class="col-md-3">
+                <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="mw-100">
+            </div>
+            <div class="col-md-3">
+                <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="mw-100">
+            </div>
+            <div class="col-md-3">
+                <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="mw-100">
+            </div>
+            <div class="col-md-3">
+                <img src="{{ url_for ('static', filename='img/sidekix-media-g51F6-WYzyU-unsplash.jpg') }}" alt="" class="mw-100">
+            </div>
+        </div>
+
+        <div class="text-center row-inline">
+            <br><br>
+            <button type="button" class="btn btn-primary">View All Projects</button>
+            <br><br>
+        </div>
+        <br>
+    </div>
+
+    <div class="container" id="about">
+        <div class="text-center">
+            <br><br>
+            <h2>About Us</h2>
+            <br>
+            <div class="row">
+                <div class="col-2"></div>
+                <p class="col-8">With over 15 years experience and real focus on customer satisfaction, you can rely on
+                    us for your next renovation,
+                    driveway sett or home repair. We provide a professional service for private and commercial
+                    customers.</p>
+                <div class="col-2"></div>
+            </div>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col text-right">
+                <img src="{{ url_for ('static', filename='david-siglin.jpg') }}" alt="" class="rounded-circle w-75">
+            </div>
+            <div class="col">
+                <div>
+                    <h6>Best Materials</h6>
+                    <p>We have the best materials ever, they are so great, its gonna be great. </p>
+                    <br>
+                </div>
+                <div>
+                    <h6>Best Materials</h6>
+                    <p>We have the best materials ever, they are so great, its gonna be great. </p>
+                    <br>
+                </div>
+                <div>
+                    <h6>Best Materials</h6>
+                    <p>We have the best materials ever, they are so great, its gonna be great. </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="container-fluid bg-light text-center" id="services">
+        <br><br><br>
+        <h2>What Our Customers Have To Say</h2>
+        <br>
+        <div class="row">
+            <div class="col-2"></div>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+            <div class="col-2"></div>
+        </div>
+        <br>
+    </div>
+
+    <nav class="container-fluid text-center bg-warning" id="contact">
+        <br>
+        <div class="row">
+            <div class="col">
+                <img src="" alt="">
+                <p class="font-weight-light" href="#">Tel: 801.759.7643</p>
+            </div>
+            <div class="col">
+                <img src="" alt="">
+                <p class="font-weight-light" href="#">Email: eric@aplusglassutah.com</p>
+            </div>
+            <div class="col">
+                <img src="" alt="">
+                <p class="font-weight-light" href="#">Hours: Mon - Fri 8AM - 5PM</p>
+            </div>
+        </div>
+        <br>
+    </nav>
+    <div class="bg-light">
+        <div class="container row">
+            <div class="col">
+                <br>
+                <p class="font-weight-bold">About Us</p>
+                <p>Founded by Kevin Smith back in 2000. Renovate has estabilished itself as one of the greatest and
+                    prestigious providers of construction focused interior renovation services and building.</p>
+                <br><br>
+                <div class="row align-top">
+                    <div class="col">
+                        <p class="font-weight-bold">Location</p>
+                        <p>123 Main St</p>
+                        <p>Sandy, UT</p>
+                        <p>84094</p>
+                        <p>Servicing the Greater Salt Lake City Area</p>
+                    </div>
+                    <div class="col text-right">
+                        <img src="{{ url_for('static', filename='img/logo.jfif') }}" width="250" height=""
+                        
+                            class="d-inline-block" alt="" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid text-center">
+        <br>
+        <p class="small font-weight-light">© APlusGlassUtah, 2020</p>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <script>
+        window.onscroll = function (){detectScroll()};
+        const nav = document.querySelector('#navbar');
+        function detectScroll(){
+            let windowPosition = window.pageYOffset | document.body.scrollTop
+            if (windowPosition > 10){
+                nav.style.backgroundColor = '';
+                nav.style.background = "rgba(0, 0, 0, 0.5)";
+                console.log(nav.style)
+            } else {
+                nav.style.background = ''
+                nav.style.backgroundColor = 'transparent'
+            }
+        };
+        
+
+    </script>
+</body>
+
+</html>
